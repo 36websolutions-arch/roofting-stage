@@ -39,7 +39,7 @@ const faqData: FAQItem[] = [
     id: 5,
     question: "Do you have a guarantee?",
     answer:
-      "We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and Apple Pay.",
+      "Yes we do, RooferStage will provide residential replacement appointments over the course of AdsSpend being billed, for an average of $X per calendar day. Paid for by RooferStage.",
   },
 ];
 
@@ -82,12 +82,10 @@ export default function Faq() {
                 key={item.id}
                 className={`mb-4 last:mb-0 border-b border-[#B7B7B7] last:border-b-0 transition-all duration-300 ${
                   expandedId === item.id ? "pb-4" : ""
-                }`}
-              >
+                }`}>
                 <button
                   onClick={() => toggleAnswer(item.id)}
-                  className="w-full flex items-center justify-between p-3 text-left rounded-xl transition-all duration-300 group"
-                >
+                  className="w-full flex items-center justify-between p-3 text-left rounded-xl transition-all duration-300 group">
                   <h3 className="text-lg md:text-xl font-semibold text-white pr-4">
                     {item.question}
                   </h3>
@@ -107,8 +105,7 @@ export default function Faq() {
                     expandedId === item.id
                       ? "max-h-96 opacity-100 translate-x-0"
                       : "max-h-0 opacity-0 -translate-x-4"
-                  }`}
-                >
+                  }`}>
                   <div className="px-2">
                     <p className="text-gray-300 text-base md:text-lg leading-relaxed">
                       {item.answer}

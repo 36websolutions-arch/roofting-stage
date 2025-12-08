@@ -68,8 +68,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="flex items-center gap-3 text-[#CECECE] hover:text-white transition-colors duration-300 group"
-                  >
+                    className="flex items-center gap-3 text-[#CECECE] hover:text-white transition-colors duration-300 group">
                     <FaArrowRight
                       className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300"
                       size={16}
@@ -91,8 +90,7 @@ export default function Footer() {
                 <li key={index}>
                   <a
                     href={contact.href}
-                    className="flex items-start gap-3 text-[#CECECE] hover:text-white transition-colors duration-300 group"
-                  >
+                    className="flex items-start gap-3 text-[#CECECE] hover:text-white transition-colors duration-300 group">
                     <FaArrowRight
                       className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 mt-1 shrink-0"
                       size={16}
@@ -117,8 +115,7 @@ export default function Footer() {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
-                  className="relative p-3 border-2 border-white/20 rounded-full hover:border-white/50 hover:scale-110 transition-all duration-300 group"
-                >
+                  className="relative p-3 border-2 border-white/20 rounded-full hover:border-white/50 hover:scale-110 transition-all duration-300 group">
                   {social.icon}
                   <div className="absolute inset-0 border-2 border-white/30 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                 </a>
@@ -127,13 +124,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-4 mb-8">
+        {/* <div className="flex items-center justify-center gap-4 mb-8">
           <FaArrowRight className="text-white/30 rotate-180" size={20} />
           <div className="h-px w-16 bg-linear-to-r from-transparent via-white/30 to-transparent"></div>
           <div className="h-px flex-1 bg-linear-to-r from-transparent via-white/10 to-transparent"></div>
           <div className="h-px w-16 bg-linear-to-r from-transparent via-white/30 to-transparent"></div>
           <FaArrowRight className="text-white/30" size={20} />
-        </div>
+        </div> */}
 
         <div className="text-center py-6 border-t border-white/10">
           <div className="mb-4 md:mb-0">
