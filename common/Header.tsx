@@ -27,8 +27,7 @@ export default function Header() {
     <header className="w-full">
       <div
         className="hidden md:flex w-full py-2 px-4 justify-center items-center"
-        style={{ backgroundColor: "#4780B8" }}
-      >
+        style={{ backgroundColor: "#4780B8" }}>
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
           <button className="px-4 py-1.5 bg-transparent border border-white/30 rounded-full text-white text-xs hover:bg-white/10 transition-all duration-200 whitespace-nowrap font-inter">
             New
@@ -59,14 +58,16 @@ export default function Header() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-white hover:text-white/90 font-medium text-sm transition-colors duration-200 whitespace-nowrap font-inter"
-                >
+                  className="text-white hover:text-white/90 font-medium text-sm transition-colors duration-200 whitespace-nowrap font-inter">
                   {link.name}
                 </Link>
               ))}
-              <button className="px-5 py-2 bg-[#4780B8] border border-[#4780B8] rounded-full text-white font-medium text-sm hover:bg-transparent transition-all duration-200 whitespace-nowrap font-inter cursor-pointer">
+              <Link
+                href="https://apply.rooferstage.com"
+                target="_blank"
+                className="px-5 py-2 bg-[#4780B8] border border-[#4780B8] rounded-full text-white font-medium text-sm hover:bg-transparent transition-all duration-200 whitespace-nowrap font-inter cursor-pointer">
                 Book a Call
-              </button>
+              </Link>
             </div>
           </div>
           <div className="md:hidden flex items-center justify-between">
@@ -84,8 +85,7 @@ export default function Header() {
             <button
               onClick={toggleMenu}
               className="p-2 text-gray-100 hover:text-gray-200 cursor-pointer transition-colors font-inter"
-              aria-label="Toggle menu"
-            >
+              aria-label="Toggle menu">
               {isMenuOpen ? (
                 <FiX className="w-6 h-6" />
               ) : (
@@ -101,8 +101,7 @@ export default function Header() {
           isMenuOpen
             ? "opacity-100 translate-x-0"
             : "opacity-0 translate-x-full pointer-events-none"
-        }`}
-      >
+        }`}>
         <div
           className={`absolute inset-0 bg-black transition-opacity duration-300 ${
             isMenuOpen ? "opacity-50" : "opacity-0"
@@ -113,8 +112,7 @@ export default function Header() {
         <div
           className={`absolute right-0 top-0 h-full w-full max-w-sm bg-white shadow-xl transition-transform duration-300 ease-in-out ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
-        >
+          }`}>
           <div className="flex items-center justify-between p-6 border-b">
             <div className="relative w-32 h-8">
               <Image
@@ -127,8 +125,7 @@ export default function Header() {
             <button
               onClick={closeMenu}
               className="p-2 text-gray-700 hover:text-gray-900 transition-colors"
-              aria-label="Close menu"
-            >
+              aria-label="Close menu">
               <FiX className="w-6 h-6" />
             </button>
           </div>
@@ -140,19 +137,19 @@ export default function Header() {
                   key={link.name}
                   href={link.href}
                   onClick={closeMenu}
-                  className="text-gray-700 hover:text-gray-900 font-medium text-base py-4 px-3 rounded-lg hover:bg-gray-50 transition-all duration-200 font-inter"
-                >
+                  className="text-gray-700 hover:text-gray-900 font-medium text-base py-4 px-3 rounded-lg hover:bg-gray-50 transition-all duration-200 font-inter">
                   {link.name}
                 </Link>
               ))}
             </div>
 
-            <button
+            <Link
+              href="https://apply.rooferstage.com"
+              target="_blank"
               onClick={closeMenu}
-              className="w-full px-6 py-3 bg-transparent border border-[#0A0A0A7A] rounded-full text-gray-800 font-medium text-sm hover:bg-gray-50 transition-all duration-200"
-            >
+              className="w-full px-6 py-3 bg-transparent border border-[#0A0A0A7A] rounded-full text-gray-800 font-medium text-sm hover:bg-gray-50 transition-all duration-200">
               Book a Call
-            </button>
+            </Link>
           </div>
         </div>
       </div>

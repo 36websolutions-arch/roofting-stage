@@ -27,7 +27,7 @@ function generateHtmlEmail(data: {
           <table width="620" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 6px 30px rgba(10,10,10,0.08);">
             <tr>
               <td style="padding:28px 32px;border-bottom:1px solid #eef2f6;">
-                <h1 style="margin:0;font-size:20px;color:#0b2545;">🎉 New Lead — Form Submission</h1>
+                <h1 style="margin:0;font-size:20px;color:#0b2545;">🎉New Lead — Rooferstage Form Submission</h1>
                 <p style="margin:6px 0 0;color:#5b6b7a;font-size:14px;">
                   A new user submitted the qualification form. Details are below.
                 </p>

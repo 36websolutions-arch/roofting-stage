@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroPage() {
   return (
     <section
       id="hero"
-      className="relative w-full min-h-auto flex items-center justify-center overflow-hidden"
-    >
+      className="relative w-full min-h-auto flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/bgherocenter.png"
@@ -31,9 +31,12 @@ export default function HeroPage() {
         </p>
 
         <div className="mb-76 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-          <button className="px-8 py-4 bg-[#4780B8] text-black rounded-full font-semibold text-lg sm:text-xl hover:bg-[#4780B8]/90 hover:scale-105 transition-all duration-300 transform font-inter shadow-lg hover:shadow-xl cursor-pointer">
+          <Link
+            href="https://apply.rooferstage.com"
+            target="_blank"
+            className="px-8 py-4 bg-[#4780B8] text-black rounded-full font-semibold text-lg sm:text-xl hover:bg-[#4780B8]/90 hover:scale-105 transition-all duration-300 transform font-inter shadow-lg hover:shadow-xl cursor-pointer">
             Book a call
-          </button>
+          </Link>
         </div>
       </div>
     </section>
