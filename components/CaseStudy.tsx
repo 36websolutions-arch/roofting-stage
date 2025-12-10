@@ -5,8 +5,7 @@ export default function CaseStudy() {
   return (
     <section
       id="case-studies"
-      className="relative w-full h-auto md:min-h-[600px] flex items-center justify-center overflow-hidden py-10 md:py-20"
-    >
+      className="relative w-full h-auto md:min-h-[600px] flex items-center justify-center overflow-hidden py-10 md:py-20">
       <div className="absolute inset-0 flex">
         <div className="relative flex-1">
           <Image
@@ -48,7 +47,7 @@ export default function CaseStudy() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-6">
           <div className="flex flex-col bg-[#0D0D0D] px-6 py-8 border border-[#2A2A2A] space-y-6 rounded-2xl h-full">
-            <div className="relative w-full">
+            {/* <div className="relative w-full">
               <div className="relative w-full h-48 rounded-2xl overflow-hidden">
                 <Image
                   src="/images/casestudy.png"
@@ -72,7 +71,15 @@ export default function CaseStudy() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/ZP0bH4Kkmzk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
             <h2 className="text-[19px] font-inter font-extrabold text-white text-start">
               Steven LeBlanc - Legacy Construction
             </h2>
