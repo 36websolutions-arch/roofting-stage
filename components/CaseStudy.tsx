@@ -77,9 +77,9 @@ export default function CaseStudy() {
               height="315"
               src="https://www.youtube.com/embed/ZP0bH4Kkmzk"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+              allowFullScreen></iframe>
             <h2 className="text-[19px] font-inter font-extrabold text-white text-start">
               Steven LeBlanc - Legacy Construction
             </h2>
