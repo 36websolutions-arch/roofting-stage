@@ -15,19 +15,19 @@ const faqData: FAQItem[] = [
     question:
       "How does Roofer Stage get qualified roof replacement appointments?",
     answer:
-      "Looking for reliable siding installation? We install premium siding that’s built for durability, insulation, and long-lasting curb appeal. Our process includes removing old siding, repairing structural issues, and installing new materials with precision for a flawless finish that protects your home year-round.",
+      "Paid ads. The same way you found us 😁. We then handle every step of the way UNTIL the homeowner SHOWS. DONE FOR YOU.",
   },
   {
     id: 2,
     question: "What counts as a “qualified” appointment?",
     answer:
-      "Standard shipping takes 3-5 business days within the US. Express shipping is available for 1-2 business days.",
+      "A verbal, recorded agreement between an Appointment Setting Agent and the ‘Property Owner’ to schedule a specific date and time at which the ‘Property Owner’ is present, expecting a representative of YOUR ROOFING COMPANY, and it is determined during the visit that the property requires a full roof replacement.",
   },
   {
     id: 3,
     question: "What happens if you don’t deliver 25 appointments in 30 days?",
     answer:
-      "Yes, we ship to over 50 countries worldwide. International shipping typically takes 7-14 business days.",
+      "You will be compensated for EVERY shown appointment that you did not recieve.",
   },
   {
     id: 4,
