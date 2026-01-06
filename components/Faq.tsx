@@ -32,8 +32,7 @@ const faqData: FAQItem[] = [
   {
     id: 4,
     question: "Do you lock clients into contracts?",
-    answer:
-      "Once your order ships, you'll receive a tracking number via email. You can also track it from your account dashboard.",
+    answer: "No. You can cancel anytime you wish.",
   },
   {
     id: 5,
