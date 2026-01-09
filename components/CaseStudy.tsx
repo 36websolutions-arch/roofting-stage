@@ -87,16 +87,15 @@ export default function CaseStudy() {
 
           <div className="flex flex-col bg-[#0D0D0D] px-6 py-8 border border-[#2A2A2A] space-y-6 rounded-2xl h-full">
             <div className="relative w-full">
-              <div className="relative w-full h-48 rounded-2xl overflow-hidden">
+              <div className="relative w-full h-72 rounded-2xl overflow-hidden">
                 <Image
                   src="/images/casestudy.png"
                   alt="case study 2"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  priority
+                  className="w-full h-full object-cover"
+                  width={400}
+                  height={500}
                 />
-                <div className="absolute inset-0 bg-black/20" />
+                {/* <div className="absolute inset-0 bg-black/20" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-16 h-16 flex items-center justify-center">
                     <Image
@@ -108,7 +107,7 @@ export default function CaseStudy() {
                       priority
                     />
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <h2 className="text-[19px] font-inter font-extrabold text-white text-start">
@@ -117,7 +116,7 @@ export default function CaseStudy() {
           </div>
 
           <div className="flex flex-col bg-[#0D0D0D] px-6 py-8 border border-[#2A2A2A] space-y-6 rounded-2xl h-full">
-            <div className="relative w-full">
+            {/* <div className="relative w-full">
               <div className="relative w-full h-48 rounded-2xl overflow-hidden">
                 <Image
                   src="/images/casestudy.png"
@@ -141,7 +140,15 @@ export default function CaseStudy() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/DHQn-LRbaiE?si=20t4Sn5qpIs37V_4"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen></iframe>
             <h2 className="text-[19px] font-inter font-extrabold text-white text-start">
               Jacob Barker - Barker Family Roofing
             </h2>
