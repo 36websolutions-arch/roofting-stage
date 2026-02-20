@@ -51,43 +51,61 @@ export default function TabCard() {
     if (activeTab > 1) setActiveTab(activeTab - 1);
   };
 
-  const handleSubmit = async () => {
+  // const handleSubmit = async () => {
+  //   if (!isCurrentStepCompleted()) return;
+  //   try {
+  //     const response = await fetch("/api/form", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(formData),
+  //     });
+
+  //     const result = await response.json();
+
+  //     if (response.ok) {
+  //       alert("Form submitted successfully!");
+  //       console.log("Email response:", result);
+
+  //       setFormData({
+  //         role: "",
+  //         roofType: "",
+  //         revenue: "",
+  //         fullName: "",
+  //         phone: "",
+  //         email: "",
+  //         businessName: "",
+  //       });
+  //     } else {
+  //       alert("Failed to submit form. Please try again.");
+  //       console.error(result);
+  //     }
+  //   } catch (error) {
+  //     console.error("Submit error:", error);
+  //     alert("Something went wrong!");
+  //   }
+  // };
+
+  const handleSubmit = () => {
     if (!isCurrentStepCompleted()) return;
-
-    try {
-      const response = await fetch("/api/form", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const result = await response.json();
-
-      if (response.ok) {
-        alert("Form submitted successfully!");
-        console.log("Email response:", result);
-
-        setFormData({
-          role: "",
-          roofType: "",
-          revenue: "",
-          fullName: "",
-          phone: "",
-          email: "",
-          businessName: "",
-        });
-      } else {
-        alert("Failed to submit form. Please try again.");
-        console.error(result);
-      }
-    } catch (error) {
-      console.error("Submit error:", error);
-      alert("Something went wrong!");
-    }
+    fetch("https://hook.us1.make.com/jc758hen9ootwyvud87awl0nc1f9b25b", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    setFormData({
+      role: "",
+      roofType: "",
+      revenue: "",
+      fullName: "",
+      phone: "",
+      email: "",
+      businessName: "",
+    });
   };
-
   return (
     <section
       id="services"
@@ -113,8 +131,8 @@ export default function TabCard() {
                       tab.id < activeTab
                         ? "bg-[#4780B8] text-white"
                         : tab.id === activeTab
-                        ? "bg-[#4780B8] text-white"
-                        : "bg-[#E1E1E6]/60 text-gray-700"
+                          ? "bg-[#4780B8] text-white"
+                          : "bg-[#E1E1E6]/60 text-gray-700"
                     }
                     ${
                       tab.id <= activeTab
