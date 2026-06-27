@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaArrowRight,
 } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
   const mainSiteLinks = [
@@ -25,9 +26,21 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: <FaFacebook size={24} />, href: "#", label: "Facebook" },
-    { icon: <FaYoutube size={24} />, href: "#", label: "YouTube" },
-    { icon: <FaInstagram size={24} />, href: "#", label: "Instagram" },
+    {
+      icon: <FaFacebook size={24} />,
+      href: "https://www.facebook.com/RooferStage",
+      label: "Facebook",
+    },
+    {
+      icon: <FaYoutube size={24} />,
+      href: "https://www.youtube.com/channel/UClw8Rkdzad5Zhx831bdr0Gw",
+      label: "YouTube",
+    },
+    {
+      icon: <FaInstagram size={24} />,
+      href: "https://www.instagram.com/rooferstage/",
+      label: "Instagram",
+    },
   ];
 
   return (
@@ -111,14 +124,15 @@ export default function Footer() {
             </h3>
             <div className="flex gap-4 mb-8">
               {socialLinks.map((social) => (
-                <a
+                <Link
                   key={social.label}
                   href={social.href}
+                  target="_blank"
                   aria-label={social.label}
                   className="relative p-3 border-2 border-white/20 rounded-full hover:border-white/50 hover:scale-110 transition-all duration-300 group">
                   {social.icon}
                   <div className="absolute inset-0 border-2 border-white/30 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
